@@ -6,16 +6,17 @@ import java.util.ArrayList;
    
    String nombres[] = { "Ana", "Luis", "Alicia", "Pedro", "Carmen", "Andrea", "Cristina", "Julio","Patricia" };
    int edades[] = { 14, 15, 13, 15, 16, 12, 16, 14, 13 };
+   String[] poblaciones = {"Vigo", "Lugo", "Ferrol", "Valencia", "Málaga", "Cartagena", "Jaén", "Benalmádena", "Marbella"}
 
    ArrayList<Persona> lista = new ArrayList<Persona>();
 
    // Llena la lista
    for (int i = 0; i < n; i++){
-      lista.add(new Persona(nombres[i], edades[i]));
+      lista.add(new Persona(nombres[i], edades[i], poblaciones[i]));
    }
 
    // Muestra la lista
    for (int i = 0; i < lista.size(); i++)
-      System.out.println(lista.get(i).getNombre() + "*" + lista.get(i).getEdad());
+      System.out.println(lista.get(i).getNombre() + "*" + lista.get(i).getEdad() + "*" + lista.get(i).getPoblacion());
    }
 }// main
